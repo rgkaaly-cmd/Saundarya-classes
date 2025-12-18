@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #000, #23023d, #3c005a, #10001f);
+    background-size: 300% 300%;
+    animation: bgAnim 12s linear infinite;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+@keyframes bgAnim {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+.section {
+    padding: 70px 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #ff00ff;
+}
+
+.section-sub {
+    font-size: 18px;
+    opacity: .9;
+    margin-bottom: 15px;
+}
+
+.hero {
+    position: relative;
+    padding: 120px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.4;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 0 0 25px #ff00ff;
+    margin-bottom: 10px;
+}
+
+.sub {
+    font-size: 22px;
+    opacity: .95;
+    margin-bottom: 25px;
+}
+
+.info-box p {
+    margin: 5px;
+    font-size: 16px;
+    text-shadow: 0 0 5px #ff00ff;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+    border: 1px solid #b300ff;
+    transition: 0.3s;
+    min-width: 220px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px #ff00ff;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    margin-top: 18px;
+    padding: 14px 38px;
+    font-size: 18px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: .3s;
+    box-shadow: 0 0 12px white;
+    color: #280045;
+}
+
+.gradient-btn {
+    background: linear-gradient(45deg, #ff00ff, #b300ff);
+    color: white;
+    animation: btnGrad 3s infinite alternate;
+}
+
+@keyframes btnGrad {
+    0% {
+        background: linear-gradient(45deg, #ff00ff, #b300ff)
+    }
+    50% {
+        background: linear-gradient(45deg, #b300ff, #ff00ff)
+    }
+    100% {
+        background: linear-gradient(45deg, #ff00ff, #b300ff)
+    }
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px white;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+.contact-form button {
+    align-self: center;
+}
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    padding: 15px;
+    background: #25D366;
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    z-index: 10;
+    transition: 0.3s;
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #25D366;
+}
+
+footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-top: 30px;
+    text-align: center;
+}
